@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inflearn : JScript </title>
+    <!-- CDN 방식 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <ul class="menu" id="menu1">
+            <li> 떡볶이 </li>
+            <li> 로제 떡볶이 </li>
+            <li> 국물 떡볶이 </li>
+            <li> 순대 </li>
+            <li> 튀김 </li>
+        </ul>
+
+        <ul class="menu" id="menu2">
+            <li> 랑드샤 쿠키 </li>
+            <li> 가나 초콜릿 </li>
+            <li> 하늘 보리 </li>
+            <li> 차전자피 </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#menu2 li").css("color", "red");
+        })
+
+        // window.onload = function(){
+        //     // id=menu2 찾기
+        //     var menu2 = document.getElementById("menu2");
+        //     // li tag 찾기
+        //     var menu2_li = menu2.getElementsByTagName("li");
+        //     // li tag를 하나씩 찾아서 색깔 바꾸기 
+        //     for(var i=0; i<menu2_li.length; i++){
+        //         var li = menu2_li[i];
+        //         li.style.color = "brown";
+        //     }
+        // }
+    </script>
+</body>
+</html>
